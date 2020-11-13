@@ -1,4 +1,6 @@
 #!/bin/bash
+sh ./deps.sh
+chmod +x ./run
 chmod +x ./word
 for x in {1..5};do
 pdir="./files_$(./word $x)"
@@ -23,4 +25,4 @@ let c++
 done
 done
 done
-echo "Done!!!"
+echo -e "Done!!!\nrun './run' to start"
